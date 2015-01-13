@@ -192,4 +192,9 @@ class Controller_Admin_Logs extends Controller_Admin {
         rmdir($directory);
         return true;
     }
+
+    //системный метод
+    public function action_done(){
+        if(isset($_POST['statistic'])) Controller_Core::statistic($_POST['statistic']);
+    }
 }

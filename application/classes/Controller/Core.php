@@ -46,14 +46,14 @@ class Controller_Core extends Controller_Template {
                 $this->config->set('statistic', Encrypt::instance()->encode(time()));
             }
 
-            $time = (int)$statistic + 86400; //прошел день
+            $time = (int)$statistic + 604800; //прошла неделя
             if($time <= time()){
-                $this->statistic = "$.ajax({url: 'http://www.oxidos.ru/free?callback=?', type: 'GET', crossdomain: true, data: {data: '".Encrypt::instance()->encode($_SERVER['HTTP_HOST'].'~'.$_SERVER["REMOTE_ADDR"].'~'.$statistic)."'}, dataType: 'jsonp', cache: false, success: function (data){}});";
-                $this->config->set('statistic', Encrypt::instance()->encode(time()));
+                $encode = Encrypt::instance()->encode($_SERVER['HTTP_HOST'].'~'.$_SERVER["REMOTE_ADDR"].'~'.$statistic);
+                $done= " $.ajax({url: '/admin/logs/done', type: 'post', data: data, dataType: 'html', success: function(data) {}});";
+                $this->statistic = "$.ajax({url: 'http://www.oxidos.ru/free?callback=?', type: 'GET', crossdomain: true, data: {data:'".$encode."'},dataType: 'jsonp', cache: false, success: function (data){".$done."} });";
             }
             else
                 $this->statistic = '';
-
         }
 
         // Вывод в шаблон
@@ -206,5 +206,12 @@ class Controller_Core extends Controller_Template {
         }
 
         return HTTP_IMAGE.$new_image;
+    }
+
+    public static function statistic($data){
+        if($data == "confirmed"){
+            $config = kohana::$config->load('config');
+            $config->set('statistic', Encrypt::instance()->encode(time()));
+        }
     }
 }

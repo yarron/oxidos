@@ -1,0 +1,60 @@
+**Инструкция на русском
+
+Инструкция по установке:
+1) извлеките файлы и папки из данного архива на сервер
+2) переименуйте файл "htaccess.txt" в ".htaccess" (иначе не сможете начать установку)
+3) запустите сайт в браузере, введя название вашего домена (например: http://www.oxidos.ru)
+4) следуйте подсказкам и завершите установку.
+5) установка завершена.
+
+P.S.
+ - Файл с настройками движка находится в "\application\bootstrap.php".
+ - Файл с конфигурацией базы данных находится в "\application\config\database.php".
+ - Файл с логами находится "\application\logs" (все ошибки здесь)
+
+Возможные проблемы при установке:
+1. Не запускается установка по адресу http://ваш сайт/install или не переходит на следующий шаг
+Проблема чаще всего в том, что у вас сервер не видит файл ".htaccess".
+2. На при переходе на шаг 4 выкидывает на первый шаг.
+Проблема скорее всего в запросе на Mysql. Причины будут лежать в логах.
+
+Инструкция по переносу на другой сервер:
+1) обязательно переименуйте файл ".htaccess" в "htaccess.txt" (иначе при переносе он может потеряться.)
+2) сделайте бэкап базы данных
+3) осуществите перенос всех файлов и папок
+4) в файле "\application\bootstrap.php" раскомментируйте строку  "'install'       => MODPATH.'install'," (иначе установщик будет не доступен)
+5) переименуйте файл "htaccess.txt" в ".htaccess" (иначе движок будет работать не корректно)
+6) запустите сайт по ссылке "http://ваш сайт/install" и пройдите установку до конца.
+7) загрузите свой бекап базы на сервер (учтите, чтобы префикс базы бекапа совпадал с префиксом, указанным при установке)
+8) перенос завершен
+
+
+***********************************************************************************************
+**Instruction on english
+Installation Instructions:
+1) remove files and folders from the archive to the server
+2) rename the file "htaccess.txt" to ".htaccess" (otherwise you can not start the installation)
+3) run the site in a browser, typing your domain name (eg: http://www.oxidos.ru)
+4) Follow the prompts to complete the installation.
+5) the installation is complete.
+
+P.S.
+ - The configuration file is located in the engine "\application\bootstrap.php".
+ - File with the configuration database is in "\application\config\database.php".
+ - A file with logs is "\application\logs" (all errors here)
+
+Possible problems during installation:
+1. The installation does not start at http://site/install or moves to the next step
+The problem often is that you can not see the file server ".htaccess".
+2. On the transition to step 4 throws on the first pitch.
+Problem is most likely in the request for Mysql. The reasons lie in the logs.
+
+Instructions for transfer to another server:
+1) must rename the file ".htaccess" in the "htaccess.txt" (otherwise when you transfer it may be lost.)
+2) Make a backup of the database
+3) to implement the transfer of all files and folders
+4) in the file "\application\bootstrap.php" uncomment  "'install' => MODPATH. 'Install'," (otherwise the installer will not be available)
+5) rename the file "htaccess.txt" to ".htaccess" (otherwise the engine will not work correctly)
+6) run the site through "http://site/install" and go to the end of the installation.
+7) upload your backup database server (note that the prefix database backup coincided with the prefix specified during installation)
+8) the transfer is complete
