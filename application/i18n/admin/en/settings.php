@@ -1,0 +1,118 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+
+return array(
+    'heading_title'             => 'Settings',
+    
+    'tab-general'               => 'General',
+    'tab-meta'                  => 'Data',
+    'tab-local'                 => 'Localisation',
+    'tab-mail'                  => 'Mail',
+    'tab-image'                 => 'Images',
+    'tab-option'                => 'Options',
+    'tab-server'                => 'Server',
+    'tab-stat'                  => 'Google Analytics',
+
+    'head_user'                 => 'Users',
+    'head_article'              => 'Articles',
+    'head_new'                  => 'News',
+    'head_search'               => 'Search',
+    'head_comment'              => 'Comments',
+    'head_search'               => 'Search',
+    
+    'button_save'               => 'Save',
+    'button_abort'              => 'Abort',
+    'button_apply'              => 'Apply',
+    'button_loading'            => 'Loading...',
+
+    'text_yes'                  => 'Yes',
+    'text_no'                   => 'No',
+    
+    'text_company_name'         => 'Name of company:',
+    'text_company_description'  => 'Description of company:',
+    'text_company_director'     => 'Director of company:',
+    'text_company_email'        => 'E-Mail of company:',
+    'text_company_address'      => 'Address of company:',
+    'text_company_phone'        => 'Phone of company:',
+    'text_company_fax'          => 'Fax of company:',
+    'text_company_code'         => 'Additional Field:',
+    'text_company_code_tooltip' => 'Field for additional text or code that is displayed on the Contacts page.',
+
+    'text_site_name'            => 'Name of site:',
+    'text_site_description'     => 'Description of site:',
+    'text_title'                => 'Meta-tag Title:',
+    'text_meta_description'     => 'Meta-tag Description:',
+    'text_meta_keywords'        => 'Meta-tag Keywords:',
+    'text_template_index'       => 'Template site:',
+    'text_template_admin'       => 'Template admin:',
+    
+    'text_language_index'       => 'Language on site:',
+    'text_language_admin'       => 'Language on admin:',
+    
+    'text_mail_protocol'        => 'Mail Protocol:',
+    'text_smtp_host'            => 'SMTP host:',
+    'text_smtp_login'           => 'SMTP login:',
+    'text_smtp_password'        => 'SMTP password:',
+    'text_smtp_port'            => 'SMTP port:',
+    'text_smtp_timeout'         => 'SMTP timeout:',
+    'text_mail_registration'    => 'Notification of new user registration:',
+    'text_optional_address'     => 'Additional addresses for alerts:',
+    'text_optional_address_tooltip'     => 'Addresses separated by commas',
+
+    'text_logotype'             => 'Logotype:',
+    'text_icon'                 => 'Icon:',
+    'text_icon_tooltip'         => 'File extension PNG 16x16 px',
+    'text_browse'               => 'Browse',
+    'text_clear'                => 'Clear',
+    
+    'text_image_category'       => 'The width of the image in the list of categories:',
+    'text_image_article'        => 'The width of the image in the list of artecles:',
+    'text_image_news'           => 'The width of the image in the list of news:',
+    'text_image_search'         => 'The width of the image in the list of search:',
+    'text_image_popup'          => 'The width of the pop-up image of the article:',
+    
+    'text_limit_article'        => 'Limit characters in the article:',
+    'text_count_article'        => 'Number of articles:',
+    'text_limit_new'            => 'Limit characters in the news:',
+    'text_count_new'            => 'Number of news:',
+    'text_mode_comment'         => 'Mode of comments',
+    'text_count_comment'        => 'Number of comments:',
+    'text_limit_search'         => 'Limit characters in search of each article:',
+    'text_count_search'         => 'Number of articles in the search:',
+
+    'text_comment_moderation'   => 'Moderation of comments:',
+    'text_comment_guest'   		=> 'Guests are allowed to post comments:',
+
+    'text_maintenance'          => 'Maintenance Mode:',
+    'text_maintenance_tooltip'  => 'Disable the display of the site. Visitors will be displayed on the message service. After logging in the admin site will normally appear for him',
+    'text_maintenance_info'     => 'Reason service:',
+    'text_maintenance_info_tooltip'     => 'Message to display the site in maintenance mode',
+
+    'text_cache'                => 'Driver cache:',
+    'text_cache_tooltip'        => 'Be careful when choosing a driver',
+    'text_cache_time'           => 'Cache lifetime:',
+    'text_cache_time_tooltip'   => 'The number of seconds',
+    'text_cache_compression'    => 'Compression cache:',
+    'text_cache_host'           => 'Server for caching:',
+    'text_cache_port'           => 'Port for caching:',
+    'text_cache_mem_tooltip'    => 'Driver Only Memcache',
+
+    'text_newsletter'           => 'Confirmation upon registration:',
+    'text_newsletter_tooltip'   => 'Require confirmation of acceptance of the rules during the registration',
+    'text_user_role'            => 'Role in registration:',
+    'text_user_role_tooltip'    => 'A role that will be added to new users at registration',
+    'text_admin_role'           => 'The role of root:',
+    'text_admin_role_tooltip'   => 'With this role, users can see the site in maintenance mode. To access the rest will be closed',
+    'text_no_select'            => '--- No select ---',
+    
+    'text_google'               => 'Code Google Analytics:',
+    'text_google_login'         => 'Login to your account:',
+    'text_google_password'      => 'Password to your account:',
+    'text_google_report_id'     => 'The ID report:',
+    'text_google_check'         => 'Connection Test:',
+    'text_google_check_tooltip' => 'Before checking save the settings',
+    'text_google_start'         => 'Start...',
+    
+    'message_edit'              => 'Settings updated!',
+    
+    'error_permission'		    => 'Warning: You do not have permission to modify settings!',
+);

@@ -1,0 +1,26 @@
+{
+  "name": "jquery-bgiframe",
+  "version": "3.0.1",
+  "main": "./jquery.bgiframe.js",
+  "ignore": [
+    ".*",
+    "*.txt",
+    "*.markdown",
+    "*.json",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": ">=1.2.6"
+  },
+  "homepage": "https://github.com/brandonaaron/bgiframe",
+  "_release": "3.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.1",
+    "commit": "29dc6e2a20c918ec3300dcbd8ab7592d6b789e3c"
+  },
+  "_source": "git://github.com/brandonaaron/bgiframe.git",
+  "_target": "~3.0.1",
+  "_originalSource": "jquery-bgiframe",
+  "_direct": true
+}

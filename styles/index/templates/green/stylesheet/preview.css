@@ -1,0 +1,329 @@
+#review-body {
+    background: #6F717E url(../image/bg/25.jpg) top center no-repeat fixed;
+    color: #444;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#review-body, #review-body td, #review-body th, #review-body input, #review-body textarea, #review-body select, #review-body a, #review-body p {
+    font-size: 14px;
+    line-height:25px;
+}
+
+#review-body h1 {
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+#review-body h2 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em;
+}
+#review-body h3 {
+    font-size: 1.25em;
+    margin: 0 0 0.67em;
+}
+#review-body h4 {
+    font-size: 1em;
+    margin: 0 0 1em;
+}
+#review-body h5 {
+    font-size: 0.83em;
+    margin: 0 0 1.33em;
+}
+#review-body h6 {
+    font-size: 0.75em;
+    margin: 0 0 2em;
+}
+#review-body h1, #review-body h2, #review-body h3,#review-body h4,#review-body h5,#review-body h6 {
+    font-weight: 700;
+    font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+}
+#review-body hr {
+    background-image: url(../image/gauze.png);
+    height: .75em;
+    border: none;
+    margin: .75em 0;
+}
+#review-body p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #444;
+
+}
+#review-body a, #review-body a:visited, #review-body a #review-body b {
+    color: #417D03;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#review-body a:hover {
+    text-decoration: none;
+}
+#review-body a img {
+    border: none;
+}
+#review-body .clr{
+    clear: both;
+}
+/*Form*/
+#review-body form {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+#review-body input[type='text'], #review-body input[type='password'], #review-body textarea {
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    padding: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#review-body select {
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+}
+#review-body label {
+    cursor: pointer;
+}
+
+
+/* layout */
+#review-container {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#review-wrap{
+    position: relative;
+    padding:10px 10px 10px 10px;
+}
+#review-sub-wrap{
+    background-color: #ffffff;
+    clear: both;
+}
+/* content */
+#review-content{
+    background-color: #ffffff;
+    padding: 15px;
+}
+#review-content .review-content {
+    padding: 10px;
+    overflow: auto;
+    margin-bottom: 20px;
+    border: 1px solid #E7E7E7;
+}
+#container .breadcrumb {
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+#review-body .help {
+    color: #999;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    display: block;
+}
+/*Table*/
+#review-body table.form {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+#review-body table.form tr td:first-child {
+    width: 150px;
+}
+#review-body table.form > * > * > td {
+    color: #000000;
+}
+#review-body table.form td {
+    padding: 4px;
+}
+#review-body input.large-field, select.large-field {
+    width: 300px;
+}
+#review-body table.list {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+}
+#review-body table.list td {
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+#review-body table.list thead td {
+    background-color: #EFEFEF;
+    padding: 0px 5px;
+}
+#review-body table.list thead td a, .list thead td {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+#review-body table.list tbody td {
+    vertical-align: top;
+    padding: 0px 5px;
+}
+#review-body table.list .left {
+    text-align: left;
+    padding: 7px;
+}
+#review-body table.list .right {
+    text-align: right;
+    padding: 7px;
+}
+#review-body table.list .center {
+    text-align: center;
+    padding: 7px;
+}
+#review-body table.radio {
+    width: 100%;
+    border-collapse: collapse;
+}
+#review-body table.radio td {
+    padding: 5px;
+    vertical-align: top;
+}
+#review-body table.radio td label {
+    display: block;
+}
+#review-body table.radio tr td:first-child {
+    width: 1px;
+}
+#review-body table.radio tr td:first-child input {
+    margin-top: 1px;
+}
+#review-body table.radio tr.highlight:hover td {
+    background: #F1FFDD;
+    cursor: pointer;
+}
+
+
+
+/* button */
+#review-body a.button, #review-body input.button, #review-body button {
+    cursor: pointer;
+    color: #ffffff;
+    line-height: 25px;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background: url('../image/button.png') top left repeat-x;
+}
+#review-body a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 12px 6px 12px;
+}
+#review-body input.button {
+    margin: 0;
+    border: 0;
+    height: 38px;
+    padding: 0px 12px 0px 12px;
+}
+#review-body a.button:hover, #review-body input.button:hover, #review-body button:hover {
+    background: url('../image/button-active.png') repeat-x;
+}
+#review-body .buttons {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    overflow: auto;
+    padding: 6px;
+    margin-bottom: 20px;
+}
+#review-body .buttons .left {
+    float: left;
+    text-align: left;
+}
+#review-body .buttons .right {
+    float: right;
+    text-align: right;
+}
+#review-body .buttons .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#review-body .htabs {
+    height: 30px;
+    line-height: 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+#review-body .htabs a {
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    background: #FFFFFF url('../image/tab.png') repeat-x;
+    padding: 7px 15px 6px 15px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 2px;
+    display: none;
+}
+#review-body .htabs a.selected {
+    padding-bottom: 7px;
+    background: #FFFFFF;
+}
+#review-body .tab-content {
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px;
+    margin-bottom: 20px;
+    z-index: 2;
+    overflow: auto;
+}
+
+/*Common cross***************************/
+/*border-radius*/
+
+#review-container #review-wrap
+#review-container
+#review-sub-wrap,
+#loading-layer{
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+}
+
+
+#review-body a.button, #review-body input.button, #review-body button,
+{
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+/*box-shadow*/
+#review-body #loading-layer,
+#review-container #review-wrap,
+#review-body a.button,
+#review-body input.button,
+#review-body button{
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    -webkit-box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    -moz-box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    -khtml-box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+}
+
+/*border*/
+#review-container #review-wrap{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.18);
+    border-right: 1px solid rgb(2, 2, 2);
+    border-right: 1px solid rgba(2, 2, 2, 0.28);
+    border-left: 1px solid rgb(2, 2, 2);
+    border-left: 1px solid rgba(2, 2, 2, 0.28);
+    border-top: 1px solid rgb(250, 250, 250);
+    border-top: 1px solid rgba(250, 250, 250, 0.27);
+}

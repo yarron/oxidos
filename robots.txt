@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin
+Disallow: /application
+Disallow: /modules
+Disallow: /system
+Disallow: /search
+Disallow: /account
+
+#sitemap: http://site/sitemap.xml

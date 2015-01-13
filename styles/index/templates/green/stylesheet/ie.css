@@ -1,0 +1,53 @@
+/*border*/
+
+#loading-layer,
+#container #wrap,
+#container #global-wrap,
+#container #main,
+#container #header #welcome,
+#container #header #welcome .button-wrap,
+#container #header #welcome #stat,
+#content #comment-list .avatar,
+#content #comment-list .number,
+#content #comment-list .edit,
+#content #comment-list .remove{
+    background:transparent;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000,endColorstr=#30000000)";
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);
+    zoom: 1;
+    border:none;
+}
+
+
+#header #search {
+	position: inherit;
+	float: right;
+}
+#header .button-search {
+	top: 1px;
+}
+#header #search input {
+	padding: 3px 1px 1px 33px;
+	height: 19px;
+}
+
+/* menu */
+#menu ul li {
+	position: relative;
+}
+#menu ul li div {
+	z-index: 5;
+}
+#menu ul li.active div {
+	display: block;
+}
+
+
+.success, .warning, .attention, .information {
+	position: relative;
+}
+.success .close, .warning .close, .attention .close, .information .close {
+	position: absolute;
+	right: 10px;
+}
+

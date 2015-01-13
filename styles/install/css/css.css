@@ -1,0 +1,293 @@
+html {
+	overflow: -moz-scrollbars-vertical;
+	margin: 0;
+	padding: 0;
+}
+* {
+	font-family: Arial, Verdana, sans-serif;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: transparent url('../image/bg.jpg') fixed;
+}
+body, p, td, th, input, textarea, select, option {
+	color: #777777;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#wrap > h1 {
+    background: transparent url('../image/step.png') 0px 10px no-repeat;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 0px 0px 40px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #FFF;
+	vertical-align: middle;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+p, ul, ol, li, td {
+	line-height: 18px;
+}
+form {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+fieldset {
+	border: 1px solid #DBDBDB;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+fieldset table {
+	width: 100%;
+	border-collapse: collapse;
+}
+fieldset table.form tr td:first-child {
+	width: 250px;
+}
+fieldset table td {
+	padding: 5px;
+}
+select, input[type='text'], input[type='password'], textarea {
+	background: #FFFFFF url('../image/field.png') repeat-x;
+	border: 1px solid #DBDBDB;
+	padding: 4px;
+	color: #000;
+}
+option {
+	color: #000;
+}
+a, a:visited, a b {
+	color: #23A1D1;
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+img {
+	margin: 0;
+	padding: 0;
+}
+a img {
+	border: none;
+}
+b, strong {
+	color: #555;
+}
+label {
+	cursor: pointer;
+}
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 100px;
+	position: relative;
+}
+#header #logo {
+	position: absolute;
+	left: 3px;
+	top: 10px;
+	width: 264px;
+	height: 50px;
+}
+#header #language {
+	position: absolute;
+	right: 3px;
+	top: 35px;
+	width: 100px;
+	height: 30px;
+}
+#header #language img{
+	cursor:pointer;
+}
+#wrap{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.18);
+    border-right: 1px solid rgb(2, 2, 2);
+    border-right: 1px solid rgba(2, 2, 2, 0.28);
+    border-left: 1px solid rgb(2, 2, 2);
+    border-left: 1px solid rgba(2, 2, 2, 0.28);
+    border-top: 1px solid rgb(250, 250, 250);
+    border-top: 1px solid rgba(250, 250, 250, 0.27);
+    -khtml-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    -webkit-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    -moz-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    padding:0px 10px 10px 10px;
+    position: relative;
+    background:transparent;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000,endColorstr=#30000000)";
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);
+    zoom: 1;
+}
+
+#subwrap{
+    padding:10px;
+    background: #ffffff;
+}
+#column-left {
+	float: left;
+	width: 200px;
+    margin-top: 17px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	min-height: 250px;
+}
+#column-left ul, #column-left ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#column-left ul ul {
+	margin-left: 30px;
+}
+#column-left ul a, #column-left ul a b {
+	color: #777777;
+	text-decoration: none;
+}
+#column-left ul li {
+	display: block;
+	padding: 10px 15px 15px 40px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #DBDBDB;
+	background: url('../image/bullet-arrow.png') 0px 5px no-repeat;
+}
+#content {
+	margin-bottom: 20px;
+	overflow: hidden;
+	min-height: 350px;
+}
+.warning {
+	padding: 10px 10px 10px 50px;
+	margin-bottom: 15px;
+	background: #FFD1D1 url('../image/warning.png') 10px center no-repeat;
+	border: 1px solid #F8ACAC;
+	color: #555555;
+}
+.required {
+	color: #F00;
+}
+.error {
+	color: #F00;
+}
+.good {
+	color: #0F0;
+}
+.bad {
+	color: #F00;
+}
+a.button, input.button {
+	cursor: pointer;
+	color: #FFF;
+	font-size: 13px;
+	border: 1px solid #0396E1;
+	background: url('../image/button.png') repeat-x;
+    -khtml-box-shadow: 1px 2px 2px #DDDDDD;
+	-webkit-box-shadow: 1px 2px 2px #DDDDDD;
+	-moz-box-shadow: 1px 2px 2px #DDDDDD;
+	box-shadow: 1px 2px 2px #DDDDDD;
+	margin-bottom: 2px;
+}
+a.button:hover, input.button:hover {
+	border: 1px solid #0396E1;
+	background-position: 0px -26px;
+}
+a.button {
+	display: inline-block;
+	text-decoration: none;
+	padding: 4px 11px 4px 11px;
+}
+input.button {
+	margin: 0;
+	height: 24px;
+	padding: 0px 11px 0px 11px;
+	height: 28px;
+}
+.buttons {
+	border: 1px solid #DBDBDB;
+	overflow: auto;
+	padding: 6px;
+	margin-bottom: 20px;
+}
+.buttons .left {
+	float: left;
+	text-align: left;
+}
+.buttons .right {
+	float: right;
+	text-align: right;
+}
+.buttons .center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Terms */
+.terms {
+	background: #FFFFFF;
+	border: 1px solid #DBDBDB;
+	margin: 3px 0px 10px 0px;
+	padding: 4px;
+	height: 250px;
+	overflow-y: scroll;
+}
+.terms p, .terms ul, .terms ol {
+	color: #000000;
+}
+
+.message {
+	padding: 10px 10px 10px 50px;
+	margin-bottom: 15px;
+	background: #c3e8c0 url('../image/finished.png') 10px center no-repeat;
+	border: 1px solid #DDDDDD;
+	color: #555555;
+}
+.success div {
+	text-align: center;
+	float: left;
+	width: 50%;
+	float: left;
+}
+.success img {
+	border: 1px solid #DDDDDD;
+	padding: 5px;
+	background: #FFF;
+	margin-bottom: 3px;
+	width: 270px;
+}
+#footer {
+	text-align: center;
+	margin-bottom: 25px;
+}
+#footer a {
+	margin: 0px 5px;
+	line-height: 28px;
+}
+
+/*Border*/
+fieldset,
+select, 
+input[type='text'], 
+input[type='password'], 
+textarea,
+#wrap,
+#subwrap,
+a.button, input.button
+{
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}

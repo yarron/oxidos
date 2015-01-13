@@ -1,0 +1,10 @@
+image/cache/*
+image/*
+check/
+application/cache/*
+application/logs/*
+application/bootstrap.php
+.htaccess
+.idea/
+
+

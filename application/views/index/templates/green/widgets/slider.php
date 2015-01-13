@@ -1,0 +1,3 @@
+<?foreach ($slider as $sl):?>
+    <?=$sl?>
+<?endforeach?>
