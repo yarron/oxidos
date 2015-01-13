@@ -8,6 +8,7 @@
                 <h4 class="modal-title"><?=$text['heading_title']?></h4>
             </div>
             <div class="modal-body">
+                <?if($permission):?>
                 <div class="container-fluid" id="editor-img">
                     <div class="row" id="menu">
                         <div class="col-sm-8" id="message"></div>
@@ -29,6 +30,13 @@
                         <div class="col-sm-9 jstree-default" id="column-right"></div>
                     </div>
                 </div>
+                <?else:?>
+                    <div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        <?=$text['error_permission']?>
+                    </div>
+                <?endif?>
             </div>
             <div class="modal-footer">
                 <div class="container-fluid">
@@ -41,10 +49,10 @@
                         <div class="col-sm-2"><button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><?=$text['button_close']?></button></div>
                     </div>
                 </div>
-
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
+<?if($permission):?>
 <script src="/styles/admin/bower_components/jstree/dist/jstree.min.js"></script>
 <script src="/styles/admin/bower_components/jquery.lazyload/jquery.lazyload.min.js"></script>
 <script src="/styles/admin/bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
@@ -390,6 +398,10 @@ $(document).ready(function() {
                      }
 
                      if (json.error) {
+                         var tree = $("#column-left").jstree(true);
+                         var sel = tree.get_selected();
+                         tree.deselect_all();
+                         tree.select_node(sel);
                          displayErr(json.error);
                      }
                  },
@@ -496,7 +508,11 @@ $(document).ready(function() {
                             }, 500)
                         }
                         if (json.error) {
-                            displayErr(json.error);
+                            setTimeout(function(){
+                                $('#progress .progress-bar').removeClass('active');
+                                $('#progress').css('display','none');
+                                displayErr(json.error);
+                            }, 500)
                         }
                     },
                     progressall: function (e, data) {
@@ -529,5 +545,5 @@ $(document).ready(function() {
 });
 
 //--></script>
-
+<?endif?>
 </div>

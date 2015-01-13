@@ -175,7 +175,6 @@ class Controller_Admin_Roles extends Controller_Admin {
         $id = (int) $this->request->param('id');
 
         $ignore = array(
-			'Admin/Image',
 			'Admin/Auth',
 			'Admin/Errors',
 			'Admin/Widgets',

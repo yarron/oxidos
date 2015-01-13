@@ -4,10 +4,16 @@
  */
 
 class Controller_Admin_Image extends Controller_Admin {
+    private $permission = true;
+
     public function  before() {
         parent::before();
         //загрузка языкового файла
         i18n::lang('admin/'.$this->config->get('admin_language_folder').'/image');
+
+        if (!$this->checkPermission('access', Request::current()->directory().'/'.Request::current()->controller())) {
+            $this->permission = false;
+        }
     }
 
 
@@ -47,7 +53,7 @@ class Controller_Admin_Image extends Controller_Admin {
                     'error_delete'		=>__('error_delete'),
                     'error_delete_file'	=>__('error_delete_file'),
                     'error_rename'      =>__('error_rename'),
-                    'error_rename_file'      =>__('error_rename_file'),
+                    'error_rename_file' =>__('error_rename_file'),
                     'error_filename'    =>__('error_filename'),
                     'error_missing'		=>__('error_missing'),
                     'error_exists'      =>__('error_exists'),
@@ -79,6 +85,7 @@ class Controller_Admin_Image extends Controller_Admin {
             );
     	
     	    $content = View::factory($this->template_admin.'image/v_image')
+                        ->bind('permission',$this->permission)
                         ->bind('template',$this->template_admin)
                         ->bind('text', $text)
                         ->bind('data', $data);
@@ -229,9 +236,9 @@ class Controller_Admin_Image extends Controller_Admin {
     			$json['error'] = __('error_directory');
     		}
             
-            /*if (!$this->checkPermission('modify', 'admin/image')) {
+            if (!$this->checkPermission('modify', 'Admin/Image')) {
           			$json['error'] = __('error_permission');  
-    		}*/
+    		}
             
     		if (!isset($json['error'])) {	
     			mkdir($directory . '/' . UTF8::str_ireplace('../', '', $_POST['name']), 0777);
@@ -260,9 +267,9 @@ class Controller_Admin_Image extends Controller_Admin {
     			$json['error'] = __('error_select');
     		}
     		
-    		/*if (!$this->checkPermission('modify', 'admin/image')) {
+    		if (!$this->checkPermission('modify', 'Admin/Image')) {
           			$json['error'] = __('error_permission');  
-    		}*/
+    		}
     		
     		if (!isset($json['error'])) {
     			if (is_file($path)) {
@@ -324,9 +331,9 @@ class Controller_Admin_Image extends Controller_Admin {
     			$json['error'] = __('error_directory');
     		}
     		
-    		/*if (!$this->checkPermission('modify', 'admin/image')) {
+    		if (!$this->checkPermission('modify', 'Admin/Image')) {
           			$json['error'] = __('error_permission');  
-    		}*/
+    		}
 
     		if (!isset($json['error'])) {
     			rename($from, $to . '/' . basename($from));
@@ -366,9 +373,9 @@ class Controller_Admin_Image extends Controller_Admin {
     			$json['error'] = __('error_select');
     		}
     		
-    		/*if (!$this->checkPermission('modify', 'admin/image')) {
+    		if (!$this->checkPermission('modify', 'Admin/Image')) {
           			$json['error'] = __('error_permission');  
-    		}	*/
+    		}
     		//проверка на права
     		if (!isset($json['error'])) {
     			if (is_file($from)) {
@@ -444,9 +451,9 @@ class Controller_Admin_Image extends Controller_Admin {
     			}			
     		}
     		
-    		/*if (!$this->checkPermission('modify', 'admin/image')) {
+    		if (!$this->checkPermission('modify', 'Admin/Image')) {
           			$json['error'] = __('error_permission');  
-    		}*/
+    		}
     		
     		if (!isset($json['error'])) {
                 if (is_file($old_name)) {
@@ -522,9 +529,9 @@ class Controller_Admin_Image extends Controller_Admin {
 			$json['error'] = __('error_directory');
 		}
 		
-		/*if (!$this->checkPermission('modify', 'admin/image')) {
+		if (!$this->checkPermission('modify', 'Admin/Image')) {
           			$json['error'] = __('error_permission');  
-		}*/
+		}
 		
 		if (!isset($json['error'])) {	
 			if (@move_uploaded_file($_FILES['image']['tmp_name'][0], $directory . '/' . $filename)) {
