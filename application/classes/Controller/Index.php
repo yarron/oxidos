@@ -94,9 +94,6 @@ class Controller_Index extends Controller_Core {
         $this->layouts                              = $layouts;
         $this->lang = $code;
         $data = array(
-            'title'             => $this->config->get('title'),
-            'description'       => $this->config->get('meta_description'),
-            'keywords'          => $this->config->get('meta_keywords'),
             'base'              => 'http://'.$_SERVER['HTTP_HOST'].'/',
             'icon'              => HTTP_IMAGE.$this->config->get('icon'),
             'google_analytics'  => $this->config->get('google'),
@@ -115,6 +112,8 @@ class Controller_Index extends Controller_Core {
             ->bind('scripts',       $this->template->scripts)
             ->bind('data',          $data);
 
-        
+        $this->template->title = $this->config->get('title');
+        $this->template->description = $this->config->get('meta_description');
+        $this->template->keywords = $this->config->get('meta_keywords');
     }
 }

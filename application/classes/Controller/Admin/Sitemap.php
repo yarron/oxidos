@@ -7,9 +7,9 @@ class Controller_Admin_Sitemap extends Kohana_Sitemap
         $sitemap = new Sitemap;
         $url = new Sitemap_URL;
 
-        $news_obj = ORM::factory('admin_new')->where('status', '=', 1)->order_by('date_modified','DESC')->find_all(); 
-        $page_obj = ORM::factory('admin_page')->where('status', '=', 1)->order_by('date_modified','DESC')->find_all();  
-        $category_obj = ORM::factory('admin_category')->where('status', '=', 1)->order_by('date_modified','DESC')->find_all(); 
+        $news_obj = ORM::factory('Admin_New')->where('status', '=', 1)->order_by('date_modified','DESC')->find_all();
+        $page_obj = ORM::factory('Admin_Page')->where('status', '=', 1)->order_by('date_modified','DESC')->find_all();
+        $category_obj = ORM::factory('Admin_Category')->where('status', '=', 1)->order_by('date_modified','DESC')->find_all();
 
         $article_obj = DB::select('articles.date_modified','articles.alias',array('categories.alias','alias_c'))
             ->from('articles') ->where('articles.status', '=', 1)

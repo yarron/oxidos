@@ -21,7 +21,7 @@
             <?if($time):?>
                 <div id="mapinfo" class="alert alert-success">
                     <?=$text['entry_info']?><br /><br />
-                    <?=form::button('admin/feeds/fsitemap/robot', __('button_robot'), array("id" => "sendrobot",'data-loading-text'=>$text['button_connect'], 'class'=>"btn btn-success"))?><br />
+                    <?=Form::button('admin/feeds/fsitemap/robot', __('button_robot'), array("id" => "sendrobot",'data-loading-text'=>$text['button_connect'], 'class'=>"btn btn-success"))?><br />
                     <div id="mapresult"></div>
                 </div>
 
@@ -48,7 +48,7 @@
                     <div class="col-sm-10"><?=Form::checkbox("fsitemap[status]", 1, isset($feed['status']) ? true : false, array('class'=>'form-control', 'style'=>'width:30px'))?></div>
                 </div>
             <?=Form::close()?>
-            <?=form::button('admin/feeds/fsitemap/map', __('button_map'), array("id" => "buildmap", 'data-loading-text'=>$text['button_loading'], 'class'=>"btn btn-default"))?>
+            <?=Form::button('admin/feeds/fsitemap/map', __('button_map'), array("id" => "buildmap", 'data-loading-text'=>$text['button_loading'], 'class'=>"btn btn-default"))?>
         </div>
     </div>
 </div>

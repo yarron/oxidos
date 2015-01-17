@@ -21,8 +21,8 @@ return array(
 	'ping' => array
 	(
 		'Bing'   => 'http://www.bing.com/webmaster/ping.aspx?siteMap=%s',
-                'YandexBlogs' => 'http://ping.blogs.yandex.ru/ping?sitemap=%s',
-                'Live Search' => 'http://webmaster.live.com/ping.aspx?siteMap=%s',
-                'Weblogs' => 'http://rpc.weblogs.com/pingSiteForm?name=InfraBlog&url=%s'
+        'YandexBlogs' => 'http://ping.blogs.yandex.ru/ping?sitemap=%s',
+        'Live Search' => 'http://webmaster.live.com/ping.aspx?siteMap=%s',
+        'Weblogs' => 'http://rpc.weblogs.com/pingSiteForm?name=InfraBlog&url=%s'
 	)
 );

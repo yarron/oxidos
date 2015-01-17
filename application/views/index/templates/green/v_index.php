@@ -2,13 +2,13 @@
 <html dir="ltr" lang="<?=$data['lang']?>">
 <head>
     <meta charset="UTF-8" />
-    <title><?=$data['title']?></title>
+    <title><?=$title?></title>
     <base href="<?=$data['base']?>" />
-    <?if ($data['description']):?>
-    <meta name="description" content="<?=$data['description']?>" />
+    <?if ($description):?>
+    <meta name="description" content="<?=$description?>" />
     <?endif?>
-    <?if ($data['keywords']):?>
-    <meta name="keywords" content="<?=$data['keywords']?>" />
+    <?if ($keywords):?>
+    <meta name="keywords" content="<?=$keywords?>" />
     <?endif?>
     <?if ($data['icon']):?>
     <link href="<?=$data['icon']?>" rel="icon" />

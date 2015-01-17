@@ -5,7 +5,7 @@
  */
 Route::set('sitemap_index', 'sitemap.xml(<gzip>)', array('gzip' => '\.gz'))
 	->defaults(array(
-		'controller' => 'sitemap',
+		'controller' => 'Sitemap',
 		'action' => 'index'
 	));
 
@@ -18,5 +18,5 @@ Route::set('sitemap_index', 'sitemap.xml(<gzip>)', array('gzip' => '\.gz'))
  */
 Route::set('sitemap', '<action>-<number>.xml(<gzip>)', array('action' => '[a-z]++' ,'number' => '[0-9]++', 'gzip' => '\.gz'))
 	->defaults(array(
-		'controller' => 'sitemap'
+		'controller' => 'Sitemap'
 	));

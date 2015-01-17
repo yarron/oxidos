@@ -48,7 +48,7 @@ class Controller_Index_Feeds_Frss extends Controller {
 
 
             // Генерируем xml
-            $response = urldecode(feed::create($info, $items));
+            $response = urldecode(Feed::create($info, $items));
 
             header("Content-Type: application/xml");
             echo $response; die(); 
