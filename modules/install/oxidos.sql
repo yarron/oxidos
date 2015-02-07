@@ -81,7 +81,7 @@ CREATE TABLE `ae_advertsimages` (
 --
 INSERT INTO `ae_advertsimages` (`id`, `advert_id`, `link`, `image`, `sort_order`) VALUES
 (69, 1, 'http://www.oxidos.ru/downloads/', 'data/show/show1.jpg', 1),
-(70, 1, 'http://show.oxidus.ru/admin', 'data/show/show2.jpg', 2);
+(70, 1, 'http://show.oxidos.ru/admin', 'data/show/show2.jpg', 2);
 -- --------------------------------------------------------
 
 --

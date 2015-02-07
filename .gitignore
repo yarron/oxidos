@@ -1,7 +1,5 @@
 image/cache/*
 image/*
-#check/*
-#check_/*
 application/cache/*
 application/logs/*
 #application/bootstrap.php
