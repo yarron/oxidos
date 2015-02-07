@@ -12,7 +12,9 @@
           <td>PHP Version:</td>
           <td><?php echo phpversion(); ?></td>
           <td>5.3.3</td>
-          <td align="center"><?php echo (phpversion() >= '5.3.3') ? '<img src="/styles/install/image/good.png" alt="Good" />' : '<img src="/styles/install/image/bad.png" alt="Bad" />'; ?></td>
+          <td align="center">
+                <?php echo (phpversion()) ? '<img src="/styles/install/image/good.png" alt="Good" />' : '<img src="/styles/install/image/bad.png" alt="Bad" />'; ?>
+          </td>
         </tr>
         <tr>
           <td>Register Globals:</td>
@@ -122,12 +124,7 @@
           <td>On</td>
           <td align="center"><?php echo extension_loaded('iconv') ? '<img src="/styles/install/image/good.png" alt="Good" />' : '<img src="/styles/install/image/bad.png" alt="Bad" />'; ?></td>
         </tr>
-        <tr>
-          <td>IonCube</td>
-          <td><?php echo extension_loaded('ionCube Loader') ? 'On' : 'Off'; ?></td>
-          <td>On</td>
-          <td align="center"><?php echo extension_loaded('ionCube Loader') ? '<img src="/styles/install/image/good.png" alt="Good" />' : '<img src="/styles/install/image/bad.png" alt="Bad" />'; ?></td>
-        </tr>
+
       </table>
     </fieldset>
     <p><?=$entry['step2_file']?></p>

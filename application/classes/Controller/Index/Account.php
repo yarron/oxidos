@@ -622,7 +622,7 @@ class Controller_Index_Account extends Controller_Index {
             $email = Arr::get($_POST, 'email');
             
             //ищем в базе этого пользователя
-            $usertemp = ORM::factory('Index_Useredit', array('email' => $email));
+            $usertemp = ORM::factory('Index_User', array('email' => $email));
             
             //если не нашли, выводим ошибку
             if(!$usertemp->loaded())

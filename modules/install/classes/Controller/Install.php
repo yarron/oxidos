@@ -247,7 +247,7 @@ class Controller_Install extends Kohana_Controller_Template {
                     if (!function_exists('mcrypt_encrypt'))                 $this->errors = __('step2_error_mcrypt');
                     if (!extension_loaded('mbstring'))                      $this->errors = __('step2_error_mbstring');
                     if (!extension_loaded('iconv'))                         $this->errors = __('step2_error_iconv');
-                    if (!extension_loaded('ionCube Loader'))                $this->errors = __('step2_error_ioncube');
+
                     
                     if (!file_exists(APPPATH.'bootstrap.php'))                $this->errors = __('step2_error_bootstrap');
            		    elseif (!is_writable(APPPATH.'bootstrap.php'))            $this->errors = __('step2_error_bootstrap_w');

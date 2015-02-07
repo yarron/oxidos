@@ -625,7 +625,7 @@ You should have received a copy of the GNU General Public License
     'step2_error_mcrypt'        => 'Note: For work of Oxidos CMS support is needed mCrypt:!',
     'step2_error_mbstring'      => 'Note: For work of Oxidos CMS support is needed mbString:!',
     'step2_error_iconv'         => 'Note: For work of Oxidos CMS support is needed Iconv:!',
-    'step2_error_ioncube'       => 'Note: For work of Oxidos CMS support is needed IonCube:!',
+
     
     'step2_error_bootstrap'       => 'Attention: bootstrap.php not found.!',
     'step2_error_bootstrap_w'     => 'Attention: You need permission to write file bootstrap.php!',

@@ -7,7 +7,7 @@ return array
 		'type'       => 'MySQLi',
 		'connection' => array(
 			'hostname'   => 'localhost',
-			'database'   => 'oxidos',
+			'database'   => 'test',
 			'username'   => 'root',
 			'password'   => '',
 			'port' 	   => NULL,

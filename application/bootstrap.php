@@ -33,7 +33,7 @@ date_default_timezone_set('Europe/Moscow');
 setlocale(LC_ALL, 'en_US.utf-8');
 define('DIR_IMAGE', DOCROOT.'image/');
 define('HTTP_IMAGE', "http://".$_SERVER['HTTP_HOST'].'/image/');
-define('VERSION', 'Version 1.0.0');
+define('VERSION', 'Version 1.0.1');
 /**
  * Enable the Kohana auto-loader.
  *

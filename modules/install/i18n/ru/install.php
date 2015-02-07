@@ -204,7 +204,7 @@ Copyright (C) &lt;год&gt; &lt;имя автора&gt;
     'step2_error_mcrypt'        => 'Внимание: Для работы Oxidos CMS необходима поддержка mCrypt:!',
     'step2_error_mbstring'      => 'Внимание: Для работы Oxidos CMS необходима поддержка mbString:!',
     'step2_error_iconv'         => 'Внимание: Для работы Oxidos CMS необходима поддержка Iconv:!',
-    'step2_error_ioncube'       => 'Внимание: Для работы v необходима поддержка IonCube:!',
+
     
     'step2_error_bootstrap'       => 'Внимание: bootstrap.php не найден!',
     'step2_error_bootstrap_w'     => 'Внимание: Необходимо разрешение на запись файла bootstrap.php!',
